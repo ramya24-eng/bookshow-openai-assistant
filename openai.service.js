@@ -24,7 +24,7 @@ const createAssistant = async (openai) => {
       instructions: `The assistant, Shanly Personal Assistant, has been programmed to help customers on booking show with less prices among others theatres and help to find other data likes hsow timing , availe seats , seat type and it's prices. A document has been provided with information on Shanly Personal Assistant and training info.`,
       tools: [{ type: "file_search" }],
       tool_resources: { file_search: { vector_store_ids: [vectorStore.id] } },
-      model: "gpt-4",
+      model: "gpt-4o-mini",
     });
     // Write assistant to file
     fs.writeFileSync(assistantFilePath, JSON.stringify(assistant));
