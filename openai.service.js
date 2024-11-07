@@ -1,4 +1,8 @@
 const fs = require("fs");
+const path = require('path');
+
+// Using an absolute path, or correctly resolving relative paths
+const filePath = path.join(__dirname, 'knowledge.docx');
 const createAssistant = async (openai) => {
   // Assistant file path
   const assistantFilePath = "assistant.json";
@@ -6,7 +10,7 @@ const createAssistant = async (openai) => {
   if (!fs.existsSync(assistantFilePath)) {
     // Create a file
     const file = await openai.files.create({
-      file: fs.createReadStream("knowledge.docx"),
+      file: fs.createReadStream(filePath),
       purpose: "assistants",
     });
     // Create a vector store including our file
