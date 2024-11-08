@@ -1,6 +1,5 @@
 <h2>OpenAI Chatbot<h2>
-  
-<h4>This project demonstrates a simple chatbot using OpenAI's GPT model. The bot can respond to text input dynamically, leveraging OpenAI's API.</h4>
+<h4>This project demonstrates a simple chatbot using OpenAI's GPT model. The bot can respond to text input dynamically, leveraging OpenAI's API. To view chatbot server<a href="https://bookshow-openai-assistant.vercel.app/"> click here</a></h4>
 
 <h3>Generating OpenAI API key</h3>
    <h4>To use OpenAI's API, you'll need an API key. Follow these steps to set it up:</h4>
