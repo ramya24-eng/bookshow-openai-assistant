@@ -5,7 +5,8 @@ const path = require('path');
 const filePath = path.join(__dirname, 'knowledge.docx');
 const createAssistant = async (openai) => {
   // Assistant file path
-  const assistantFilePath = "assistant.json";
+//  const assistantFilePath = "assistant.json";
+  const assistantFilePath = path.join(__dirname, 'assistant.json')
   // check if file exists
   if (!fs.existsSync(assistantFilePath)) {
     // Create a file
